@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import { FirstComponent } from './components/FirstComponent';
 
 const App = () => {
 
@@ -15,6 +15,7 @@ const App = () => {
       {x}
       <br />
       <button onClick={() => btnClick()}>Click Me</button>
+      <FirstComponent data={x} fn={setX} />
     </div>
   )
 }
